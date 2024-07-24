@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Events</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Event Management System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="organizer.html">Organizers</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="participant.html">Participants</a></li>
+                    <li><a href="sponsor.html">Sponsors</a></li>
+                    <li><a href="venue.html">Venues</a></li>
+                    <li><a href="manage_events.html">Manage Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Manage Events</h2>
+
+        <!-- Filter Section -->
+        <div id="filter">
+            <label for="eventFilter">Filter Events:</label>
+            <input type="text" id="eventFilter" placeholder="Search by name or location">
+        </div>
+
+        <!-- Event Cards Section -->
+        <div id="eventCards" class="card-container">
+            <!-- Event cards will be dynamically populated here -->
+        </div>
+
+        <!-- Event Details Section -->
+        <div id="eventDetails" class="details-container" style="display: none;">
+            <h3>Event Details</h3>
+            <div id="eventDetailsContent"></div>
+        </div>
+    </div>
+
+    <script src="js/manage_events.js" defer></script>
+</body>
+</html>
